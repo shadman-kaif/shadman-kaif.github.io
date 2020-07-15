@@ -214,7 +214,13 @@ h2 li a:hover span:nth-child(4){
 .languages {
     font-size: 40px;
     position: relative;
-    top: 200px;
+    top: 60px;
+}
+
+.others{
+    font-size: 40px;
+    position: relative;
+    top: -5px;
 }
 
 .container{
@@ -222,13 +228,12 @@ h2 li a:hover span:nth-child(4){
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 100vh;
+    height: 480px;
 }
 
 .container .card{
     position: relative;
     width: 400px;
-    linear-gradient(rgba(0,0,0,85),rgba(0,0,0,80)), url(sky.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -362,6 +367,7 @@ svg circle:nth-child(2){
 
 .h4{
     position: relative;
+    text-align: middle;
 }
 
 .hr {
@@ -371,4 +377,8 @@ svg circle:nth-child(2){
     border-top: 1px solid white;
     margin: 1em 0;
     padding: 0;
+}
+
+.quartus{
+    top: 10px;
 }
