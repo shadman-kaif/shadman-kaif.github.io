@@ -201,7 +201,7 @@ h2 li a:hover span:nth-child(4){
     color: white;
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(sky.jpg);
+    background: black;
     height: 100vh;
 }
 
@@ -383,6 +383,16 @@ svg circle:nth-child(2){
     top: 10px;
 }
 
+.body2 {
+    background: #fff;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .swiper-container {
     width: 100%;
     padding-top: 50px;
@@ -394,4 +404,5 @@ svg circle:nth-child(2){
     background-size: cover;
     width: 300px;
     height: 300px;
+    background: white;
 }
