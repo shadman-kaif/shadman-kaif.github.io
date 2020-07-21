@@ -383,7 +383,7 @@ svg circle:nth-child(2){
     top: 10px;
 }
 
-.body2 {
+.body2{
     background: #fff;
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
@@ -393,13 +393,13 @@ svg circle:nth-child(2){
     align-items: center;
 }
 
-.swiper-container {
+.swiper-container{
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.swiper-slide {
+.swiper-slide{
     background-position: center;
     background-size: cover;
     width: 300px;
