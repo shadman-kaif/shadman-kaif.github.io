@@ -10104,7 +10104,7 @@ p.lead {
 }
 
 .social-icons .social-icon:hover:nth-child(2) {
-  background-color: red;
+  background-color: darkred;
 }
 
 .social-icons .social-icon:hover:nth-child(3) {
