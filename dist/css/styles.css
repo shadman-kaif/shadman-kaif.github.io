@@ -10099,8 +10099,20 @@ p.lead {
 .social-icons .social-icon:last-child {
   margin-right: 0;
 }
-.social-icons .social-icon:hover {
-  background-color: #bd5d38;
+.social-icons .social-icon:hover:nth-child(1) {
+  background-color: green;
+}
+
+.social-icons .social-icon:hover:nth-child(2) {
+  background-color: red;
+}
+
+.social-icons .social-icon:hover:nth-child(3) {
+  background-color: #0072b1;
+}
+
+.social-icons .social-icon:hover:nth-child(4) {
+  background-color: black;
 }
 
 .dev-icons {
