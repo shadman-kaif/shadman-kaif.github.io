@@ -10233,7 +10233,7 @@ section.resume-section .resume-section-content {
 }
 
 .card--2 .card__img, .card--2 .card__img--hover {
-    background-image: url('https://images.pexels.com/photos/307008/pexels-photo-307008.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-image: url('img/pynq.jpg');
 }
 
 .card__like {
@@ -10324,6 +10324,8 @@ border-top-right-radius: 12px;
 .card__title {
   margin-top: 5px;
   margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 20px;
   font-family: 'Roboto Slab', serif;
 }
 
@@ -10331,12 +10333,6 @@ border-top-right-radius: 12px;
   font-size: 12px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-}
-
-.card__author {
-  font-weight: 600;
-  text-decoration: none;
-  color: #AD7D52;
 }
 
 .card:hover .card__img--hover {
