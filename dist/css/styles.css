@@ -10248,6 +10248,10 @@ section.resume-section .resume-section-content {
   background-image: url('img/crazy-taxi.png');
 }
 
+.card--7 .card__img, .card--7 .card__img--hover {
+  background-image: url('img/hot-wheels.png');
+}
+
 .card__like {
   width: 18px;
 }
