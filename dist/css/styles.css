@@ -10256,10 +10256,6 @@ section.resume-section .resume-section-content {
   background-image: url('img/hot-wheels.png');
 }
 
-.card__like {
-  width: 18px;
-}
-
 .card__clock {
   width: 15px;
   vertical-align: middle;
@@ -10307,6 +10303,7 @@ section.resume-section .resume-section-content {
   border-top-right-radius: 12px;
   top: 0;
 }
+
 .card {
   margin-right: 25px;
   transition: all .4s cubic-bezier(0.175, 0.885, 0, 1);
