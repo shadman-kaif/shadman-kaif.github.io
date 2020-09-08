@@ -10256,6 +10256,10 @@ section.resume-section .resume-section-content {
   background-image: url('img/hot-wheels.png');
 }
 
+.card--8 .card__img, .card--8 .card__img--hover {
+  background-image: url('img/asteroid-game.jpg');
+}
+
 .card__clock {
   width: 15px;
   vertical-align: middle;
