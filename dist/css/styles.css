@@ -10357,7 +10357,7 @@ section.resume-section .resume-section-content {
 .card__skills {
   font-size: 12px;
   font-family: 'Raleway', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .card:hover .card__img--hover {
@@ -10372,4 +10372,11 @@ section.resume-section .resume-section-content {
 
 .card:hover .card__info-hover {
   opacity: 1;
+}
+
+.copyright {
+  justify-content: center;
+  position: absolute;
+  margin-left: 250px;
+  margin-bottom: 30px;
 }
