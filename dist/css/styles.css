@@ -10317,6 +10317,7 @@ section.resume-section .resume-section-content {
 
 .card__description {
   position: absolute;
+  justify-content: center;
 }
 
 .card:hover {
@@ -10349,7 +10350,7 @@ section.resume-section .resume-section-content {
   font-family: 'Roboto Slab', serif;
 }
 
-.card__by {
+.card__skills {
   font-size: 12px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
