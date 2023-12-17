@@ -9,6 +9,22 @@
   "use strict";
 
   /**
+   * Function to change H2 content dynamically
+   */
+  document.addEventListener('DOMContentLoaded', function () {
+    var span = document.getElementById('dynamicText');
+    var phrases = ["graphic designer", "web developer", "creative thinker"];
+
+    var index = 0;
+    function changePhrase() {
+      span.textContent = phrases[index];
+      index = (index + 1) % phrases.length;
+    }
+
+    setInterval(changePhrase, 2000); // Change phrase every 2 seconds (adjust as needed)
+  });
+
+  /**
    * Easy selector helper function
    */
   const select = (el, all = false) => {
