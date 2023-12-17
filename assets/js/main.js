@@ -13,7 +13,7 @@
    */
   document.addEventListener('DOMContentLoaded', function () {
     var span = document.getElementById('dynamicText');
-    var phrases = ["graphic designer", "web developer", "creative thinker"];
+    var phrases = ["I'm a SWE at IBM", "Computer engineer graduate from the University of Toronto", "Sports enthusiast"];
 
     var index = 0;
     function changePhrase() {
@@ -21,7 +21,14 @@
       index = (index + 1) % phrases.length;
     }
 
-    setInterval(changePhrase, 2000); // Change phrase every 2 seconds (adjust as needed)
+    function handleClick() {
+      changePhrase();
+    }
+  
+    setInterval(changePhrase, 3000); // Change phrase every 3 seconds (adjust as needed)
+  
+    // Add a click event listener to the span
+    span.addEventListener('click', handleClick);
   });
 
   /**
