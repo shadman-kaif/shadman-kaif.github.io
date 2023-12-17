@@ -9,6 +9,31 @@
   "use strict";
 
   /**
+   * Vanta.js birds
+   */
+  VANTA.BIRDS({
+    el: "#birds",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    backgroundColor: 0x0,
+    color1: 0x0,
+    color2: 0x0,
+    colorMode: "variance",
+    birdSize: 0.50,
+    wingSpan: 10.00,
+    speedLimit: 3.00,
+    separation: 52.00,
+    alignment: 50.00,
+    cohesion: 50.00,
+    quantity: 4.00
+  })
+
+  /**
    * Function to change H2 content dynamically
    */
   document.addEventListener('DOMContentLoaded', function () {

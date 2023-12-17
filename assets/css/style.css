@@ -9,6 +9,20 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#birds {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Place the Vanta Birds in the background */
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #040404;
