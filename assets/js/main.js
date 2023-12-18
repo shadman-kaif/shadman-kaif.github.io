@@ -33,7 +33,7 @@
       separation: 52.00,
       alignment: 50.00,
       cohesion: 50.00,
-      quantity: 4.00,
+      quantity: 5.00,
       backgroundAlpha: 0.00
     });
   });
@@ -43,7 +43,7 @@
    */
   document.addEventListener('DOMContentLoaded', function () {
     var span = document.getElementById('dynamicText');
-    var phrases = ["SWE at IBM", "computer engineer from the University of Toronto", "basketball enthusiast"];
+    var phrases = ["software engineer at IBM", "computer engineer from the University of Toronto", "basketball enthusiast"];
 
     var index = 0;
     function changePhrase() {
