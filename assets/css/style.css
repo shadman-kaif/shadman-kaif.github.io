@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../background.png") bottom left;
+  background: #040404; /*url("../background.png") bottom left;*/
   background-size: cover;
   left: 0;
   right: 0;
