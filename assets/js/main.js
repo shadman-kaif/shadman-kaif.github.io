@@ -43,7 +43,7 @@
    */
   document.addEventListener('DOMContentLoaded', function () {
     var span = document.getElementById('dynamicText');
-    var phrases = ["software engineer at IBM", "computer engineer from UofT", "basketball enthusiast"];
+    var phrases = ["Staff Software Engineer at IBM", "Computer Engineer Graduate from UofT", "basketball enthusiast"];
 
     var index = 0;
     function changePhrase() {
