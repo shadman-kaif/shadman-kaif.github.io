@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404; /*url("../background.png") bottom left;*/
+  background: linear-gradient(135deg, #2b2a2a 0%, #000000 100%); /* Dark gradient */
   background-size: cover;
   left: 0;
   right: 0;
@@ -44,12 +44,12 @@ body::before {
 }
 
 a {
-  color: #18d26e;
+  color: #1aa3b3;
   text-decoration: none;
 }
 
 a:hover {
-  color: #35e888;
+  color: #3cc2d3;
   text-decoration: none;
 }
 
@@ -119,58 +119,37 @@ h6 {
   margin-top: 40px;
   display: flex;
   justify-content: center; /* Center social links */
+  gap: 15px; /* Space between links */
 }
 
 #header .social-links a {
-  font-size: 16px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  line-height: 1;
-  margin: 0 8px; /* Adjusted for symmetry */
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  position: relative;
+  justify-content: center;
+  background: rgba(43, 42, 42, 0.8); /* Dark gray to complement gradient */
+  border: 2px solid #e0e0e0; /* Off-white outline */
+  color: #fff; /* White icon and text */
+  padding: 8px 12px; /* Padding for rectangle shape */
+  border-radius: 4px; /* Subtle rounded corners for professionalism */
+  transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  text-decoration: none;
+}
+
+#header .social-links a i {
+  font-size: 18px; /* Slightly larger icon */
+  margin-right: 8px; /* Space between icon and text */
+}
+
+#header .social-links a span {
+  font-size: 14px; /* Smaller text for platform name */
+  font-family: "Poppins", sans-serif; /* Match navbar font */
+  color: #fff; /* White text */
 }
 
 #header .social-links a:hover {
-  background: #18d26e;
-}
-
-#header .social-links a:hover::after {
-  content: attr(data-social);
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  background: #18d26e;
-  color: #fff;
-  font-size: 12px;
-  padding: 4px 8px;
-  border-radius: 4px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-#header .social-links a:hover::before {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  border: 6px solid transparent;
-  border-top-color: #18d26e;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-#header .social-links a:hover::after,
-#header .social-links a:hover::before {
-  opacity: 1;
+  background: #1aa3b3; /* Teal background on hover */
+  border-color: #1aa3b3; /* Teal border on hover */
+  color: #fff; /* Keep icon and text white */
 }
 
 @media (max-width: 992px) {
@@ -185,12 +164,19 @@ h6 {
 
   #header .social-links {
     margin-top: 15px;
+    gap: 10px; /* Smaller gap on mobile */
   }
 
-  #header .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #header .social-links a {
+    padding: 6px 10px; /* Slightly smaller padding on mobile */
+  }
+
+  #header .social-links a i {
+    font-size: 16px; /* Smaller icon on mobile */
+  }
+
+  #header .social-links a span {
+    font-size: 12px; /* Smaller text on mobile */
   }
 }
 
@@ -243,9 +229,9 @@ h6 {
 --------------------------------------------------------------*/
 .navbar {
   padding: 0;
-  margin: 35px auto;
-  display: flex;
-  justify-content: center;
+  margin: 35px auto; /* Center navbar horizontally */
+  display: flex; /* Ensure flexbox for centering */
+  justify-content: center; /* Center content */
   width: 50%; /* Ensure it spans container for proper centering */
 }
 
@@ -270,14 +256,15 @@ h6 {
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0;
+  justify-content: center; /* Center text within link */
+  padding: 8px 12px; /* Add padding for background effect */
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
-  transition: 0.3s;
+  transition: all 0.3s ease; /* Smooth all transitions */
+  border-radius: 4px; /* Subtle rounding for background */
 }
 
 .navbar a i,
@@ -293,25 +280,30 @@ h6 {
   width: 0;
   height: 2px;
   bottom: -4px;
-  left: 0;
-  background-color: #fff;
+  left: 50%; /* Start from center */
+  transform: translateX(-50%); /* Center the underline */
+  background-color: #1aa3b3; /* Professional teal */
   visibility: hidden;
-  width: 0px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out; /* Smooth width growth */
 }
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
-  width: 25px;
+  width: 100%; /* Full width of link */
 }
 
 .navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
 .navbar li:hover>a {
   color: #fff;
+  background: rgba(26, 163, 179, 0.2); /* Teal hover background */
+}
+
+.navbar .active,
+.navbar .active:focus {
+  color: #fff;
+  background: rgba(26, 163, 179, 0.3); /* Teal active background */
 }
 
 /* Mobile Navigation */
@@ -454,8 +446,7 @@ section .container {
 # About
 --------------------------------------------------------------*/
 .about-me .content h3 {
-  font-weight: 7
-00;
+  font-weight: 700;
   font-size: 26px;
   color: #fff;
 }
@@ -519,7 +510,7 @@ section .container {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #18d26e;
+  background-color: #1aa3b3; /* Teal for progress bars */
 }
 
 /*--------------------------------------------------------------
@@ -576,7 +567,7 @@ section .container {
   font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  color: #18d26e;
+  color: #1aa3b3; /* Teal for resume titles */
   margin-bottom: 10px;
 }
 
@@ -609,8 +600,8 @@ section .container {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #18d26e;
-  border: 2px solid #18d26e;
+  background: #1aa3b3; /* Teal for resume timeline dots */
+  border: 2px solid #1aa3b3;
 }
 
 /*--------------------------------------------------------------
@@ -646,7 +637,7 @@ section .container {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #18d26e;
+  background: #1aa3b3; /* Teal for portfolio filters */
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -746,7 +737,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  color: #63eda3;
+  color: #3cc2d3; /* Teal for portfolio link hovers */
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -840,7 +831,7 @@ section .container {
 }
 
 .portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #1aa3b3; /* Teal for active pagination bullet */
 }
 
 /*--------------------------------------------------------------
