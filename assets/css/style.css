@@ -25,14 +25,6 @@ body::before {
   z-index: -1;
 }
 
-#birds {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
@@ -411,29 +403,47 @@ section .container {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Skills
---------------------------------------------------------------*/
+.about-me img {
+  display: block;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .about-me img {
+    max-width: 150px;
+  }
+}
+
+/* Skills */
 .skills .progress {
-  height: 60px;
+  height: 40px;
   display: block;
   background: none;
+  margin-bottom: 10px;
 }
 
 .skills .progress .skill {
-  padding: 10px 0;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  font-size: 12px;
+  display: block;
 }
 
 .skills .progress .skill .val {
   float: right;
+  font-size: 12px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
 }
 
 .skills .progress-bar-wrap {
   background: rgba(255, 255, 255, 0.2);
+  height: 10px;
 }
 
 .skills .progress-bar {
@@ -441,6 +451,14 @@ section .container {
   height: 10px;
   transition: 0.9s;
   background-color: #1aa3b3;
+}
+
+.skills .skills-subheading {
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -632,6 +650,11 @@ section .container {
   text-transform: uppercase;
 }
 
+.portfolio .portfolio-wrap .portfolio-info em {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .portfolio .portfolio-wrap .portfolio-links {
   text-align: center;
   z-index: 4;
@@ -676,16 +699,21 @@ section .container {
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 15px;
+  padding: 8px;
   text-align: center;
-  font-size: 13px;
+  font-size: 11px;
   color: #fff;
-  z-index: 999999;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  opacity: 0.8;
+}
+.credits:hover {
+  opacity: 1;
 }
 
 @media (max-width: 992px) {
   .credits {
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    padding: 6px;
+    font-size: 10px;
   }
 }
